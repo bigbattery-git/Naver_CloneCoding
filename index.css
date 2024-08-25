@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: "NanumGothic";
 }
 
 :root {
@@ -141,14 +142,120 @@
   border : 1px solid #03c75a;
   border-radius: 33px;
   background-color: #ffffff;
+  text-align: left;
+  position: relative;
 }
 #header-searchbar-linknaver{
   width: 67px;
   height: 58px;
-  position: absolute;
+  padding :17px 16px 17px 27px;
+  float:left;
 }
-#header-searchbar-linknaver-icon{
-  float : right;
+#header-searchbar-linknaver-icon {
   width: 24px;
   height: 24px;
+  fill : #03c75a;
 }
+#header-searchbar-textarea{
+  border: none;
+  outline: 0;
+  width: 480px;
+  height:58px;
+  font-size: 2rem;
+  line-height: 58px;
+  font-weight: bold;
+}
+#header-searchbar-inputcontroller{
+  width:30px;
+  height: 58px;
+  background: none;
+  border:none;
+  cursor: pointer;
+  padding: 22px 3px;
+  float:right;
+}
+#header-searchbar-inputcontroller-icon{
+  width: 24px;
+  height: 14px;
+  background-image: url(./img/naverUI.png);
+  background-size: 443px 424px;
+  background-position: -278px -270px;
+  background-repeat: no-repeat;
+}
+#header-searchbar-searchlist{
+  width: 22px;
+  height: 58px;
+  border:none;
+  background: none;
+  padding: 26px 6px;
+  float:right;
+}
+#header-searchbar-searchlist-icon{
+  width: 10px;
+  height: 6px;
+  background-size: 443px 424px;
+  background-repeat: no-repeat;
+  background-image:url(./img/naverUI.png);
+  background-position: -112px -98px;
+}
+#header-searchbar-search{
+  width: 62px;
+  height: 58px;
+  background: none;
+  border: none;
+  padding:17px 27px 17px 10px;
+  cursor: pointer;
+  float:right;
+}
+#header-searchbar-search-icon{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  fill: #03c75a;
+}
+/* 네비게이션 바 관련 css */
+#header>#header-nav{
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+#header>#header-nav>ul{
+  list-style-type: none;
+  display: inline-block;
+  text-align: center;
+  height: 68px;
+}
+
+#header>#header-nav>ul>li{
+  display: inline-block;
+  width: 64px;
+  height: 100%;
+  text-align: center;
+}
+
+.header-nav-hyperlink{
+  text-decoration: none;
+  margin-bottom: auto;
+}
+.header-nav-hyperlink:visited{
+  color : black;
+}
+
+.service_icon{
+  display: inline-block;
+  background-image: url(./img/favicon.ico);
+  background-size: 443px 424px;
+  background-repeat: no-repeat;
+  width:40px;
+  height:40px
+}
+
+.service_name{
+  display: block;
+}
+
+.type_mail{
+  background-position: -244px -41px;
+}
+
