@@ -70,3 +70,85 @@
   --color_shop: #9858f5;
   --color_shop_rgb: 152, 88, 245;
 }
+
+#wrap{
+  min-width: 1340px;
+  color : --color_body;
+  text-align: center;
+}
+
+#header{
+  display: inline-block;
+  width: 1280px;
+  height:215px;
+  background-color: rgb(165, 165, 165);
+}
+
+/* 버튼 관련 css */
+#header-buttons-left{
+  width:640px;
+  float : left;
+  text-align: left;
+}
+#header-buttons-right{
+  width:640px;
+  display: inline-block;
+  text-align: right;
+}
+#header>[id*="buttons"]>button{
+  background: none;
+  border: none;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  padding : 8px
+}
+#header>[id*="buttons"]>button:hover{
+  border-radius: 50%;
+  background-color: var(--color_button_border);
+  cursor: pointer;
+}
+#header>[id*="buttons"]>button>[id$=icon]{
+  background-image: url(./img/naverUI.png);
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  background-size: 443px 424px;
+}
+#header-hamberger-icon{
+  background-position: -285px -214px;
+}
+#header-pay-icon{
+  background-position: -33px -287px;
+}
+#header-navertalk-icon{
+  background-position: -165px -287px;
+}
+#header-alrat-icon{
+  background-position: -246px -229px;
+}
+#header-shoping-icon{
+  background-position: -99px -287px;
+}
+/* 검색창 관련 css */
+#header-search{
+  text-align: center;
+}
+#header-searchbar-background{
+  display: inline-block;
+  width:708px;
+  height: 60px;
+  border : 1px solid #03c75a;
+  border-radius: 33px;
+  background-color: #ffffff;
+}
+#header-searchbar-linknaver{
+  width: 67px;
+  height: 58px;
+  position: absolute;
+}
+#header-searchbar-linknaver-icon{
+  float : right;
+  width: 24px;
+  height: 24px;
+}
